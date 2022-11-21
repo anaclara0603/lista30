@@ -1,0 +1,38 @@
+<script>
+    //PROBLEMA
+    /*
+    Peça para o feirante informar a quantia de itens que foram vendidos de cada produto.
+    Considere que os itens que comercializa e os seus respectivos preços, são:
+    - Tomate: R$ 3,90 (Kg)
+    - Batata: R$ 3,40 (Kg)
+    - Batata-Doce: R$ 4,70 (Kg)
+    - Alface: R$ 1,50 (Und)
+    - Cebola: R$ 2,90 (Kg)
+    - Cebolinha: R$ 1,40 (Und)
+    - Beterraba: R$ 4,10 (Kg)
+
+    Após o usuário informar a quantia vendida para cada item, calcule e apresente o faturamento do feirante.
+    */
+
+    //ENTRADA
+    const quantTomate = Number(prompt("Informe quantos tomates foram vendidos: "));
+    const quantBatata = Number(prompt("Informe quantos batata foram vendidos: "));
+    const quantBatadoce = Number(prompt("Informe quantos batata doce foram vendidos: "));
+    const quantAlface = Number(prompt("Informe quantos alface foram vendidos: "));
+    const quantCebola = Number(prompt("Informe quantos cebola foram vendidos: "));
+    const quantCebolinha = Number(prompt("Informe quantos cebolinha foram vendidos: "));
+    const quantBeterraba = Number(prompt("Informe quantos beterraba foram vendidos: "));
+
+    //PROCESSAMENTO
+    const tomate = quantTomate * 3.90;
+    const Batata = quantBatata * 3.40;
+    const BatataDoce = quantBatadoce * 4.70;
+    const Alface = quantAlface * 1.50;
+    const cebola = quantCebola * 2.90;
+    const Cebolinha = quantCebolinha * 1.40;
+    const Beterraba = quantBeterraba * 4.10;
+    const faturamento = tomate + Batata + BatataDoce + Alface + cebola + Cebolinha + Beterraba;
+    
+    //SAÍDA
+    document.write(`Faturamento: ${faturamento}`)
+</script>
